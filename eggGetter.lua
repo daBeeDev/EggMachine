@@ -2,7 +2,6 @@ function getFuel()
 
 end
 
-
 function rturn()
     turtle.turnRight()
     turtle.forward()
@@ -11,7 +10,6 @@ function rturn()
     turtle.forward()
 end
 
-
 function leave()
     turtle.back()
     turtle.turnLeft()
@@ -19,13 +17,11 @@ function leave()
     turtle.turnRight()
 end
 
-
 function up()
     for i = 1, 7 do    
         turtle.up()
     end
 end 
-
 
 function down()
     for i = 1 ,7 do
@@ -33,12 +29,9 @@ function down()
     end
 end
 
-
 function slotCheck()
 
-
 end
-
 
 function dropEggs()
     for i = 1,5 do
@@ -48,7 +41,6 @@ function dropEggs()
 	end
 end
 
-
 function fuells()
     fuelle = turtle.getFuelLevel()
 	if fuelle < 100 then
@@ -56,7 +48,6 @@ function fuells()
     	turtsle.refuel()
 	end 
 end
-
 
 print("How many eggs?")
 eggsInput = read()
