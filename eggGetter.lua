@@ -69,9 +69,8 @@ stacks = math.floor(rawStacks)
     trips = 1
 end
          
-for i = 1, trips do
+for i = 1, trips + 1 do
     fuells()
-    print(eggs)
     if eggs > 64 then
         turtle.select(1)
         turtle.suck(64)
@@ -80,9 +79,7 @@ for i = 1, trips do
             
             turtle.select(x)
             countcheck = turtle.getItemCount(x)
-            print(countcheck)
             eggs = eggs - countcheck
-            print(eggs)
             x = x + 1 
         end
     turtle.select(1)
