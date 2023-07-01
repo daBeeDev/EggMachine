@@ -16,13 +16,13 @@ function rturn()
 end
 
 function up()
-    for i = 1, 7 do    
+    for i = 1, 11 do    
         turtle.up()
     end
 end 
 
 function down()
-    for i = 1 ,7 do
+    for i = 1 ,11 do
         turtle.down()
     end
 end
@@ -32,7 +32,7 @@ function slotCheck()
 end
 
 function dropEggs()
-    for i = 1,5 do
+    for i = 1,15 do
         local x = turtle.getSelectedSlot()
         local y = turtle.getItemDetail(x)
         if y then                     
@@ -52,7 +52,7 @@ function fuells()
     fuelle = turtle.getFuelLevel()
     if fuelle < 100 then
         turtle.select(16)
-        turtle.refuel()
+        turtle.refuel(4)
         turtle.select(1)
     end 
 end
@@ -69,7 +69,7 @@ stacks = math.floor(rawStacks)
     trips = 1
 end
          
-for i = 1, trips + 1 do
+for i = 1, trips do
     fuells()
     if eggs > 64 then
         turtle.select(1)
